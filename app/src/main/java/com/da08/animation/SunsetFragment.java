@@ -1,5 +1,6 @@
 package com.da08.animation;
 
+import android.animation.ArgbEvaluator;
 import android.animation.ObjectAnimator;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -29,10 +30,22 @@ public class SunsetFragment extends Fragment {
             public void onClick(View v) {
                 View hae = view.findViewById(R.id.sun);
                 View sea = view.findViewById(R.id.sea);
+                View sky = view.findViewById(R.id.sky);
                 ObjectAnimator animator = ObjectAnimator
                         .ofFloat(hae,"y",hae.getTop(),sea.getTop())
-                        .setDuration(3000);
+                        .setDuration(6000);
                 animator.start();
+
+                int skyColor = v.getContext().getResources().getColor(R.color.blue_sky);
+                int sunsetColor = v.getContext().getResources().getColor(R.color.sunset_sky);
+                int nigjtColor = v.getContext().getResources().getColor(R.color.night_sky);
+
+                ObjectAnimator colorAnimator = ObjectAnimator
+                        .ofInt(sky,"backgroundColor",skyColor,sunsetColor,nigjtColor)
+                        .setDuration(6000);
+
+                colorAnimator.setEvaluator(new ArgbEvaluator());
+                colorAnimator.start();
             }
         });
     }
