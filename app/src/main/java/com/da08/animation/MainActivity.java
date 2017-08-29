@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        findViewById(R.id.main).findViewById(R.id.img);
+        findViewById(R.id.main).findViewById(R.id.btn2);
 //        ViewGroup main = (ViewGroup)findViewById(R.id.main);
         // for문을 돌려서 비지니스 로직 각각 만들지 않고 패턴으로 돌리기
 //        for(int i =0; i < main.getChildCount(); i++){

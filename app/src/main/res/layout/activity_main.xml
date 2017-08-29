@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:id="@+id/main">
@@ -10,22 +10,28 @@
     <!--<include layout="@layout/item_menu"-->
         <!--android:id="@+id/menu1"/>-->
 
-    <com.da08.animation.MyCompositeView
-        android:layout_width="match_parent"
-        android:layout_height="140dp"
-        app:left_btn="@color/colorAccent">
-    </com.da08.animation.MyCompositeView>
+    <!--<com.da08.animation.MyCompositeView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="140dp"-->
+        <!--app:left_btn="@color/colorAccent">-->
+    <!--</com.da08.animation.MyCompositeView>-->
 
-    <com.da08.animation.MyCompositeView
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        app:left_btn="@color/colorPrimary">
-    </com.da08.animation.MyCompositeView>
+    <!--<com.da08.animation.MyCompositeView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="100dp"-->
+        <!--app:left_btn="@color/colorPrimary">-->
+    <!--</com.da08.animation.MyCompositeView>-->
 
-    <com.da08.animation.MyCompositeView
+    <!--<com.da08.animation.MyCompositeView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="30dp"-->
+        <!--app:left_btn="@color/colorPrimaryDark">-->
+    <!--</com.da08.animation.MyCompositeView>-->
+
+    <fragment
         android:layout_width="match_parent"
-        android:layout_height="30dp"
-        app:left_btn="@color/colorPrimaryDark">
-    </com.da08.animation.MyCompositeView>
+        android:layout_height="match_parent"
+        android:id="@+id/SunsetFragment"
+        android:name="com.da08.animation.SunsetFragment"/>
 
 </LinearLayout>
