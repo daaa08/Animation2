@@ -16,7 +16,7 @@ import android.widget.FrameLayout;
 
 public class MyCompositeView extends FrameLayout {
     public static final String BTN = "btn";
-    public static final String IMG = "img";
+    public static final String IMG = "btn2";
     private static OnClickListener STATIC_LISTENER = null;
     private View mView;
 
@@ -40,7 +40,7 @@ public class MyCompositeView extends FrameLayout {
     // listener 를 동적으로 넣기
 //    public void setListener(Map<String,OnClickListener> listener){
 //        findViewById(R.id.btn).setOnClickListener(listener.get(BTN));
-//        findViewById(R.id.img).setOnClickListener(listener.get(IMG));
+//        findViewById(R.id.btn2).setOnClickListener(listener.get(IMG));
 //    }
 
 //    public void setStaticListener(OnClickListener listener){

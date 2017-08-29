@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         // for문을 돌려서 비지니스 로직 각각 만들지 않고 패턴으로 돌리기
 //        for(int i =0; i < main.getChildCount(); i++){
 //            View v = main.getChildAt(i);
-//            if(v.getId() == R.id.img){   // id로 주기
+//            if(v.getId() == R.id.btn2){   // id로 주기
 //                v.setOnClickListener(btnListener);
 //            }else if(v instanceof ImageView){
 //                v.setOnClickListener(btnListener2);
